@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-def uppercase(str):
-    for char in str:
-        uppercase_char = chr(ord(char) - 32) if 'a' <= char <= 'z' else char
-        uppercase_char = chr(ord(char) + 32) if 'A' <= char <= 'Z' else uppercase_char
-        print("{}".format(uppercase_char), end="")
-    print("\n")
-
-
+def print_last_digit(number):
+    if number < 0:
+        last_digit = abs(number) % 10
+        print(f"{last_digit}", end="")
+        return last_digit
+    else:
+        last_digit = number % 10
+        print(f"{last_digit}", end="")
+        return last_digit

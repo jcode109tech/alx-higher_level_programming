@@ -12,4 +12,3 @@ def fizzbuzz():
             print(f"{i}", end=" ")
 
 
-print(fizzbuzz())
