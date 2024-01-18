@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    #an Import that makes it fun to laughx
+    
     i = len(sys.argv) - 1
 
     if i == 0:

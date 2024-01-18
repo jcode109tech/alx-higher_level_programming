@@ -9,4 +9,4 @@ if __name__ == "__main__":
         if args != sys.argv[0]:
             result += int(args)
             
-    print(result)
+    print("{}".format(result))
