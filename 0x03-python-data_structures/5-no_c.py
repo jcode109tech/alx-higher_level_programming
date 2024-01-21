@@ -2,11 +2,12 @@
 
 def no_c(my_string):
     new_str = ""
+    # loop through each character in a string
     for char in my_string:
-        if ord(char.lower()) not in (ord('c'), ord('C')):
+        if char.lower() not in ['c', 'C']:
             new_str += char
+    # return the modified string
     return new_str
-
 
 
 
