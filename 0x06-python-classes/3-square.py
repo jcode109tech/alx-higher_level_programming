@@ -1,16 +1,18 @@
 #!/usr/bin/python3
+""" CLASS defination : Square """
+
 
 class Square:
    """ 
-       Intialization of size : square
-       size -> private
+      Intialization of size : square
+      size -> private
    """
 
    def __init__(self, size=0):
       """
          Hanbles type error and value error
       """
-      if type(size)  != int:
+      if type(size) != int:
          raise TypeError("size must be an integer")
       if size < 0:
          raise ValueError("size must be >= 0")

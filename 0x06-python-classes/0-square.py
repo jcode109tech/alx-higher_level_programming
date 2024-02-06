@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-""" CLASS def """
+""" CLASS defination """
+
 
 class Square:
+
     """ empty class"""
     pass
