@@ -3,6 +3,11 @@
 
 
 class Square:
+    """
+       Intialization of size : square
+       size -> private
+       position-> position
+    """
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
