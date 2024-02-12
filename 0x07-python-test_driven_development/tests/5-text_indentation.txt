@@ -1,0 +1,27 @@
+==========================================
+ Prints a text with 2 new lines after each 
+'.', '?', and ':' characters.
+=========================================
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> str = "Good day.Are you okay?Follow this list: open box and close box"
+>>> text_indentation("str")
+Good day.
+<BLANKLINE>
+Are you okay?
+<BLANKLINE>
+Follow this list:
+<BLANKLINE>
+open box and close box
+
+>>> try:
+...     text_indentation(9)
+... except TypeError as e:
+...     print(e)
+text must be a string
+
+>>> try:
+...     text_indentation()
+... except TypeError as e:
+...     print(e)
+text_indentation() missing 1 required positional argument: 'text'
