@@ -4,6 +4,7 @@
     inherits <class> properties
 """
 
+
 class MyList(list):
     """
        <subclass> for List
