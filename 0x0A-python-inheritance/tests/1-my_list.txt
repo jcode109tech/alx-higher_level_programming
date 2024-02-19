@@ -1,0 +1,23 @@
+====================
+MyList test module
+====================
+
+>>> MyList = __import__('1-my_list').MyList
+>>> print(my_list)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'my_list' is not defined. Did you mean: 'MyList'?
+>>> my_list = MyList()
+>>> my_list.append(2)
+>>> my_list.append(4)
+>>> my_list.append(24)
+>>> print(my_list)
+[2, 4, 24]
+>>> my_list.print_sorted()
+[2, 4, 24]
+>>> my_list.append("ME")
+>>> print(my_list)
+[2, 4, 24, 'ME']
+>>> print(my_list)
+[]
+
