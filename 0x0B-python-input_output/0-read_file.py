@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-read <Json>
+The Last exciting project
 """
 
 
 def read_file(filename=""):
     """
-    reads file <utf-8>
+    Enable for the file access
     """
 
     with open(filename, encoding="utf-8") as f:
