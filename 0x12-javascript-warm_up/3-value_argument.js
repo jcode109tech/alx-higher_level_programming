@@ -1,9 +1,9 @@
-#!/usr/bin/node
+#!/usr/bin/nod
+e
+const firstArg = process.argv[2];
 
-const arguement = process.argv[2];
-
-if (arguement === undefined) {
+if (firstArg === undefined) {
   console.log('No argument');
 } else {
-  console.log(arguement);
+  console.log(firstArg);
 }

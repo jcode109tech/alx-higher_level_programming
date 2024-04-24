@@ -1,9 +1,7 @@
 #!/usr/bin/node
 
-const array = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-const size = (array.length) - 1;
-let i = 0;
+const langsArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-for (i = 0; i <= size; i++) {
-  console.log(array[i]);
+for (let i = 0; i < langsArray.length; i++) {
+  console.log(langsArray[i]);
 }
