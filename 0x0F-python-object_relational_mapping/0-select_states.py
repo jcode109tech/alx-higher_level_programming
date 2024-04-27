@@ -6,7 +6,6 @@ Parameters for script: mysql username, mysql password, database name.
 """
 
 import MySQLdb
-# from sys import argv
 import sys
 
 # if __name__ == '__main__':
@@ -18,9 +17,6 @@ def list_states(username, password, db_name):
         user=username,
         passwd=password,
         db=db_name
-        # passwd=argv[2],
-        # user=argv[1],
-        # db=argv[3]
     )
 
     # creating a cursor object to execute SQL queries
