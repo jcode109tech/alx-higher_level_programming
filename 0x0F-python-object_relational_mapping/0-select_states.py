@@ -7,7 +7,6 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-  
     # Command line arguments: username, password, database name
     username, password, dbname = sys.argv[1:]
 
