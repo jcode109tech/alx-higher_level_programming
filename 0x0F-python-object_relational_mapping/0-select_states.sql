@@ -7,3 +7,7 @@ CREATE TABLE IF NOT EXISTS states (
     PRIMARY KEY (id)
 );
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
+<<<<<<< HEAD
+=======
+
+>>>>>>> e61fec934f98eac71e163819c2a0e0360c28d486
