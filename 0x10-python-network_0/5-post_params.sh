@@ -1,4 +1,3 @@
 #!/bin/bash
-# Sends a post request with params
-url=$1 email="test@gmail.com" subject="I will always be here for PLD" response=$(curl -s -X POST -d "email=$email&subject=$subject" "$url" -o response.txt) && { echo "POST params:"; echo "    email: $email"; echo "    subject: $subject"; echo ""; echo "Response body:"; cat response.txt; } && rm -f response.txt
-
+# script to post data (url-encoded) to a server
+curl -s -d "email=hr@holbertonschool.com&subject=I%20will%20always%20be%20here%20for%20PLD" -X POST "$1"
