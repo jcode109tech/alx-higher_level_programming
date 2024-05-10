@@ -1,14 +1,13 @@
-#!/usr/bin/python
-
+#!/usr/bin/python3
 """
-Takes in a URL, sends a request to the URL and displays the value of the
-X-Request-Id variable found in the header of the response.
+Taing a URL, sends a request to URL and displaying the value of the
+X-Request-Id variable found in the header of the response
 """
+import sys
+from urllib.request import urlopen
 
 if __name__ == "__main__":
-        from urllib import request
-                from sys import argv
-
-                        with request.\
-                                        urlopen(argv[1]) as response:
-                                                        print(response.headers.get("X-Request-Id")) I 
+    url = sys.argv[1]
+    with urlopen(url) as response:
+        x_request_id = response.getheader('X-Request-Id')
+        print(x_request_id)

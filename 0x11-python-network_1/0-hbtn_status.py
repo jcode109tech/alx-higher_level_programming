@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-"""
-Fetches https://alx-intranet.hbtn.io/status
-"""
+""" Python script that fetches https://alx-intranet.hbtn.io/status"""
+from urllib.request import urlopen
+
+with urlopen("https://alx-intranet.hbtn.io/status") as response:
+    body = response.read()
+    decoded_content = body.decode('utf-8')
+    print("Body response:")
+    print("\t- type: {}".format(type(body)))
+    print("\t- content: {}".format(body))
+    print("\t- utf8 content: {}".format(decoded_content))
 
 if __name__ == "__main__":
-    from urllib import request
-
-        with request.\
-                    urlopen("https://alx-intranet.hbtn.io/status") as response:
-                            html = response.read()
-                                    print("Body response:")
-                                            print("\t- type: {}".format(type(html)))
-                                                    print("\t- content: {}".format(html))
-                                                            print("\t- utf8 content: {}".format(html.decode("utf-8")))
+    url = "https://alx-intranet.hbtn.io/status"

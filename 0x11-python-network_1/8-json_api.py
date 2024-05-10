@@ -16,19 +16,21 @@ You must use the package requests and sys
 
 if __name__ == "__main__":
     import requests
-        from sys import argv
+    from sys import argv
 
-            if len(argv) == 2:
-                    q = argv[1]
-                        else:
-                                q = ""
+    if len(argv) == 2:
+        q = argv[1]
+    else:
+        q = ""
 
-                                    response = requests.post("http://0.0.0.0:5000/search_user", data={"q": q})
-                                        try:
-                                                json = response.json()
-                                                        if json:
-                                                                    print("[{}] {}".format(json.get("id"), json.get("name")))
-                                                                            else:
-                                                                                        print("No result")
-                                                                                            except ValueError:
-                                                                                                    print("Not a valid JSON")
+    response = requests.post("http://0.0.0.0:5000/search_user", data={"q": q})
+    
+    try:
+        json = response.json()
+        if json:
+            print("[{}] {}".format(json.get("id"), json.get("name")))
+        else:
+            print("No result")
+    except ValueError:
+        print("Not a valid JSON")
+
