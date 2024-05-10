@@ -24,7 +24,7 @@ if __name__ == "__main__":
         q = ""
 
     response = requests.post("http://0.0.0.0:5000/search_user", data={"q": q})
-    
+
     try:
         json = response.json()
         if json:
